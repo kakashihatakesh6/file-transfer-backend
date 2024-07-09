@@ -1,0 +1,3 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/kakashihatakesh6/file-trasfer.git
