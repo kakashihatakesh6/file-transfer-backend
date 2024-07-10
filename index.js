@@ -10,7 +10,7 @@ const path = require('path');
 //
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors())
+app.use(cors());
 // app.use(cors({
 //     origin: ['https://files-trasfer.vercel.app'],
 //     methods: ['POST', 'GET'],
