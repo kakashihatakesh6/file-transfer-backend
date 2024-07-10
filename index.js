@@ -10,11 +10,13 @@ const path = require('path');
 //
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors({
-    origin: ['https://files-trasfer.vercel.app'],
-    methods: ['POST', 'GET'],
-    credentials: true
-}));
+app.use(cors())
+// app.use(cors({
+//     origin: ['https://files-trasfer.vercel.app'],
+//     methods: ['POST', 'GET'],
+//     allowedHeaders: ['Content-Type', 'Authorization'],
+//     credentials: true
+// }));
 require('dotenv').config();
 app.use(express.static('public'));
 
