@@ -24,7 +24,7 @@ app.use(express.static('public'));
 ConnectMongo();
 
 app.get('/', (req, res) => {
-    res.json({ "message": "News-Point server running fine!" });
+    res.json({ message: "File transfer server running fine!" });
 });
 
 app.listen(port, () => {
