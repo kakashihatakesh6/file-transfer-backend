@@ -22,6 +22,10 @@ let upload = multer({
 }).single('myfile');
 
 router.post('/', async (req, res) => {
+    //
+    res.setHeader('Access-Control-Allow-Origin', 'https://files-transfer.vercel.app');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
     // Store file
     upload(req, res, async (error) => {
