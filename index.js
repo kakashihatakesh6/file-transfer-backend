@@ -13,7 +13,6 @@ app.use(bodyParser.json());
 app.use(cors({
     origin: ['https://files-trasfer.vercel.app'],
     methods: ['POST', 'GET'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
 }));
 require('dotenv').config();
